@@ -35,7 +35,7 @@ function useFetch<T>(url: string): FetchData<T> {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   const reload = () => {
     fetchData();
