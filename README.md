@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Items Grid
 
-## Getting Started
+## About
 
-First, run the development server:
+This is a demo application showcasing a grid of items with the following main features:
+
+- **Sticky Header:** The header moves up when a user scrolls down and reappears when the page is scrolled up.
+- **Item Loading:** Items are loaded using a custom `useFetch` hook implementation.
+- **Page Refresh:** Users can refresh the page.
+- **Error Handling:** In case of an error on the backend, the front-end displays a warning message.
+- **Error Generation:** The server generates errors with a low probability, useful for testing error handling.
+- **Price Formatting:** Prices of items are formatted using a custom Price formatter function.
+- **GitHub Pipelines Integration:** This project integrates with GitHub pipelines.
+
+## Demo
+
+![Demo](/demo.png)
+
+### [Live Demo](https://andersdeath.github.io/nextjs-items-grid/)
+
+---
+
+## Development
+
+### Getting Started
+
+To start the development server, run:
 
 ```bash
 npm run dev
@@ -12,23 +34,13 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the result. You can begin editing the page by modifying `app/page.tsx`. The page auto-updates as you make changes.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, explore the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Documentation](https://nextjs.org/docs): Learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn): An interactive Next.js tutorial.
