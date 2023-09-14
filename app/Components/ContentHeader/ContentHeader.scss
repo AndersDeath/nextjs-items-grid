@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.ContentHeader {
+    @include intendTop(normal);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(mobile, tablet) {
+        @include intendTop(mobile);
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 40px;
+        @include responsive(mobile, tablet) {
+            font-size: 24px;
+        }
+    }
+
+    &-search-result {
+        font-size: 14px;
+        color: map-get($colorsPalette, "dark-grey");
+    }
+
+    &-reload {
+        margin-top: 50px;
+        background: map-get($colorsPalette, "tint-grey-1");
+        border: 1px solid map-get($colorsPalette, "tint-grey-2");
+        font-size: 14px;
+        border-radius: 25px;
+        height: 40px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        @include responsive(mobile, tablet) {
+            margin-top: 25px;
+        }
+    }
+}

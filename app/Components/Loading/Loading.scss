@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+.Loading {
+    @include intendTop(normal);
+    color: #7b8389;
+    font-weight: 600;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    @include responsive(mobile, tablet) {
+        font-size: 24px;
+        @include intendTop(mobile);
+    }
+}

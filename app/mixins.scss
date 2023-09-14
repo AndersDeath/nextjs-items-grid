@@ -1,0 +1,27 @@
+@use "variables" as variables;
+
+@mixin responsive($breakpoints...) {
+    @each $breakpoint in $breakpoints {
+        @if $breakpoint == desktop {
+            @media (min-width: map-get(variables.$breakpoints, $breakpoint)) {
+                @content;
+            }
+        } @else if $breakpoint == tablet-large {
+            @media (min-width: map-get(variables.$breakpoints, $breakpoint)) and (max-width: map-get(variables.$breakpoints, desktop)) {
+                @content;
+            }
+        } @else {
+            @media (max-width: map-get(variables.$breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin intendTop($state) {
+    @if $state == mobile {
+        padding: 140px 0 100px 0;
+    } @else {
+        padding: 190px 0 100px 0;
+    }
+}

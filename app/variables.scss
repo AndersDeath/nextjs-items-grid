@@ -1,0 +1,18 @@
+$colorsPalette: (
+    "black": #000000,
+    "white": #ffffff,
+    "dark-grey": #575d64,
+    "grey": #7B8389,
+    "gold": #e6c347,
+    "tint-grey-1": #edf1f4,
+    "tint-grey-2": #e5e9ed,
+    "dark-blue":  #0B119E
+);
+
+$breakpoints: (
+    mobile: 480px,
+    tablet: 768px,
+    tablet-large: 768px,
+    desktop: 1024px
+) !default;
+
